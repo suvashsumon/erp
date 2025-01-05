@@ -31,6 +31,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
+	// athentication
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+
 	// database
 	runtimeOnly 'com.h2database:h2'
 
