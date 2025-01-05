@@ -1,4 +1,4 @@
-package com.brainstation23.erp.model.domain;
+package com.brainstation23.erp.persistence.entity;
 
 import javax.persistence.*;
 import java.util.Set;
