@@ -26,7 +26,11 @@ public class SecurityConfig {
                         .antMatchers("/","/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**", "/swagger-resources/**", "/webjars/**").permitAll()
                         .anyRequest().authenticated()
                 )
-                .httpBasic();
+                .formLogin(form -> form
+                        .loginPage("/login")
+                        .permitAll()
+                )
+                .logout();
 
         return http.build();
     }
