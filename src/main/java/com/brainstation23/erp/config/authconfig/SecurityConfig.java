@@ -27,8 +27,9 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form
-                        .loginPage("/login")
+                        .loginPage("/web-auth/login")
                         .permitAll()
+                        .failureUrl("/web-auth/login?error=true")
                 )
                 .logout();
 
